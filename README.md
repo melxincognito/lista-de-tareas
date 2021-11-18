@@ -1,3 +1,7 @@
+# About My App
+
+This project is my first solo project using REACT.js. The application is a simple to-do list with limited features. You will be able to create seperate lists and have items seperated by pending items and completed items. The entire project is only available in Español. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
