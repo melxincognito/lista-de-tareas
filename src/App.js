@@ -1,6 +1,11 @@
 import "./App.css";
+import Card from "./components/todos/card/card.component";
 
 function App() {
+  function logit() {
+    alert("Nos vamos a mudar! Estaremos bien, juntas!:)");
+  }
+
   return (
     <div className="App">
       <header className="App-header">Lista de Tareas</header>
@@ -9,53 +14,23 @@ function App() {
           <h1> Hoy </h1>
           <h1> Este Semana </h1>
           <h1> Mis Proyectos </h1>
-          <button title='Añadir Nueva Lista'> Añadir Nueva Lista </button>
+          <button title="Añadir Nueva Lista" onClick={logit}>
+            {" "}
+            Añadir Nueva Lista{" "}
+          </button>
         </div>
         <div className="todos">
           <h1> Mi Lista </h1>
           <div className="myTodos">
-            <div className="card">
-              <h2 className="title"> Conseguir Trabajo en Madrid </h2>
-              <p className="description"> Nos vamos a mudar juntas </p>
-              <div>
-                <input type="checkbox" />
-                <label>Terminado </label>
-              </div>
-            </div>
-            <div className="card">
-              <h2 className="title"> Titulo </h2>
-              <p className="description"> Haz esto</p>
-              <div>
-                <input type="checkbox" />
-                <label>Terminado </label>
-              </div>
-            </div>
-            <div className="card">
-              <h2 className="title"> Titulo </h2>
-              <p className="description"> Haz esto</p>
-              <div>
-                <input type="checkbox" />
-                <label>Terminado </label>
-              </div>
-            </div>
-            <div className="card">
-              <h2 className="title"> Titulo </h2>
-              <p className="description"> Haz esto</p>
-              <div>
-                <input type="checkbox" />
-                <label>Terminado </label>
-              </div>
-            </div>
-            <div className="card">
-              <h2 className="title"> Titulo </h2>
-              <p className="description"> Haz esto</p>
-              <div>
-                <input type="checkbox" />
-                <label>Terminado </label>
-              </div>
-            </div>
+            <Card/>
+            <Card/> 
+            <Card/>
+            <Card/>
             <div className="addItem">
-              <button className="addItemBtn" title='Añadir Nuevo Recuerdo'>  +  </button>
+              <button className="addItemBtn" title="Añadir Nuevo Recuerdo">
+                {" "}
+                +{" "}
+              </button>
             </div>
           </div>
         </div>

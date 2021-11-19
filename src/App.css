@@ -59,27 +59,6 @@
   align-items: center;
 }
 
-.card {
-  display: grid;
-  width: 260px;
-  border-radius: 20px;
-  color: rgba(0, 0, 0, 0.664);
-  background-color: rgba(180, 72, 81, 0.459);
-  padding: 20px;
-  max-height: 200px;
-}
-
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: aliceblue;
-  border-radius: 25px;
-}
-
-.description {
-  display: flex;
-}
 
 button {
   height: 50px;
