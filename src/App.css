@@ -1,36 +1,90 @@
+body {
+  background-color: rgba(22, 22, 133, 0.747);
+}
+
 .App {
   text-align: center;
-  background-color: maroon;
+  background-color: rgba(128, 0, 128, 0.76);
+  border-radius: 25px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lobster";
+  min-height: 500px;
 }
 
 .App-header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: gold;
+  height: 150px;
+  border: solid purple;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.747);
 }
 
 .content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
   border: solid black;
-
+  border-radius: 25px;
+  padding: 10px;
+  gap: 10px;
+  background-color: rgba(255, 192, 203, 0.699);
 }
 
 .myLists {
-  width: 10%;
-  border: solid pink;
-
+  width: 300px;
+  border: solid black;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.603);
 }
 
 .todos {
-  width: 45%
+  width: 950px;
+  border: solid black;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.603);
 }
 
-.finishedTodos {
-  width: 45%
+.myTodos {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 15px;
+  justify-content: left;
+  align-items: center;
+}
+
+.card {
+  display: grid;
+  background-color: azure;
+  width: 260px;
+  border-radius: 20px;
+  color: orange;
+  background-color: rgba(0, 0, 0, 0.568);
+  padding: 20px;
+  max-height: 200px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 25px;
+}
+
+.description {
+  display: flex;
+}
+
+button {
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(226, 147, 0, 0.623);
 }

@@ -1,23 +1,60 @@
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className='App-header'>Lista de Tareas</header>
-      <div className='content'>
-        <div className='myLists'> 
-          <button> Add List </button> 
-          <h3> Tareas </h3>
-          <h3> De Casa </h3>
-          <h3> Peques </h3>
+      <header className="App-header">Lista de Tareas</header>
+      <div className="content">
+        <div className="myLists">
+          <h1> Hoy </h1>
+          <h1> Este Semana </h1>
+          <h1> Mis Proyectos </h1>
+          <button> Añadir Nueva Lista </button>
         </div>
-        <div className='todos'> 
-          <h2> Mi Lista </h2>
-          <p> Haz esto </p>
-        </div>
-        <div className='finishedTodos'> 
-          <h2> Terminado </h2>
-          <p> Ya hicistes esto </p>
+        <div className="todos">
+          <h1> Mi Lista </h1>
+          <div className="myTodos">
+            <div className="card">
+              <h2 className="title"> Conseguir Trabajo en Madrid </h2>
+              <p className="description"> Nos vamos a mudar juntas </p>
+              <div>
+                <input type="checkbox" />
+                <label>Terminado </label>
+              </div>
+            </div>
+            <div className="card">
+              <h2 className="title"> Titulo </h2>
+              <p className="description"> Haz esto</p>
+              <div>
+                <input type="checkbox" />
+                <label>Terminado </label>
+              </div>
+            </div>
+            <div className="card">
+              <h2 className="title"> Titulo </h2>
+              <p className="description"> Haz esto</p>
+              <div>
+                <input type="checkbox" />
+                <label>Terminado </label>
+              </div>
+            </div>
+            <div className="card">
+              <h2 className="title"> Titulo </h2>
+              <p className="description"> Haz esto</p>
+              <div>
+                <input type="checkbox" />
+                <label>Terminado </label>
+              </div>
+            </div>
+            <div className="card">
+              <h2 className="title"> Titulo </h2>
+              <p className="description"> Haz esto</p>
+              <div>
+                <input type="checkbox" />
+                <label>Terminado </label>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
