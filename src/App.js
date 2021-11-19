@@ -1,9 +1,12 @@
 import "./App.css";
 import Card from "./components/todos/card/card.component";
-import NewTodoForm from "./components/forms/todos/newTodoForm.component";
+import NewTodoItem from "./components/todos/new-todo/newTodo.component";
 import MyLists from "./components/lists/listLayout.module";
 
 function App() {
+  function tali() {
+    alert('puta');
+  }
   
 
   return (
@@ -14,16 +17,18 @@ function App() {
         <div className="todos">
           <h1> Mi Lista </h1>
           <div className="myTodos">
-            <Card/>
-            <Card/> 
-            <Card/>
-            <Card/>
+            <Card>
+              <NewTodoItem />
+            </Card>
+            <Card>
+              <NewTodoItem />
+            </Card>
             <div className="addItem">
-              <button className="addItemBtn" title="Añadir Nuevo Recuerdo">
+              <button className="addItemBtn" title="Añadir Nuevo Recuerdo" onClick={tali}>
                 {" "}
                 +{" "}
               </button>
-              <NewTodoForm/>
+              
             </div>
           </div>
         </div>

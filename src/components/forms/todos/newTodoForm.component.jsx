@@ -1,18 +1,40 @@
 import React from "react";
+import Card from "../../UI/card/card.component";
 import classes from "./newTodoForm.module.css";
+import { useRef } from "react";
 
-function NewTodoForm() {
+function NewTodoForm(props) {
+  const titleInputRef = useRef();
+  const descriptionInputRef = useRef();
+  const fechaInputRef = useRef();
+
+  function submitHandler(e) {
+    e.preventDefault();
+
+    const enteredTitle = titleInputRef.current.value;
+    const enteredDescription = descriptionInputRef.current.value;
+    const enteredFecha = fechaInputRef.current.value;
+
+    const todoData = {
+      title: enteredTitle,
+      description: enteredDescription,
+      fecha: enteredFecha,
+    };
+
+    props.onAddTodo(todoData);
+  }
+
   return (
-    <section>
-      <form className={classes.form}>
+    <Card>
+      <form className={classes.form} onSubmit={submitHandler}>
         <div>
           <div className={classes.control}>
             <label htmlFor="title">Título</label>
-            <input type="text" required />
+            <input type="text" required id='title'/>
           </div>
           <div className={classes.control}>
             <label>Fecha</label>
-            <input type="date" required />
+            <input type="date" required id='fecha'/>
           </div>
           <div className={classes.control}>
             <label htmlFor="description">Resumen</label>
@@ -23,7 +45,7 @@ function NewTodoForm() {
           </div>
         </div>
       </form>
-    </section>
+    </Card>
   );
 }
 

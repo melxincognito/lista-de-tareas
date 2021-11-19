@@ -8,14 +8,3 @@
   max-height: 200px;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: aliceblue;
-  border-radius: 25px;
-}
-
-.description {
-  display: flex;
-}
