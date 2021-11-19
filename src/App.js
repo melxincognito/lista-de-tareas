@@ -54,6 +54,9 @@ function App() {
                 <label>Terminado </label>
               </div>
             </div>
+            <div className="addItem">
+              <button className="addItemBtn" title='Añadir Nuevo Recuerdo'>  +  </button>
+            </div>
           </div>
         </div>
       </div>
