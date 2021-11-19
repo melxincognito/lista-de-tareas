@@ -1,0 +1,8 @@
+.myLists {
+    width: 300px;
+    border: solid rgba(255, 255, 255, 0.692);
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgba(54, 36, 44, 0.801);
+    color: white;
+  }
