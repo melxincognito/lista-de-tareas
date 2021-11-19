@@ -9,7 +9,7 @@ function App() {
           <h1> Hoy </h1>
           <h1> Este Semana </h1>
           <h1> Mis Proyectos </h1>
-          <button> Añadir Nueva Lista </button>
+          <button title='Añadir Nueva Lista'> Añadir Nueva Lista </button>
         </div>
         <div className="todos">
           <h1> Mi Lista </h1>
