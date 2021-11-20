@@ -1,7 +1,7 @@
 import { React } from "react";
 import { useState } from "react";
 import classes from "./newTodo.module.css";
-import Modal from "../../UI/layout/overlayModule.component";
+import NewTodoForm from "../../forms/todos/newTodoForm.component";
 import Backdrop from "../../UI/layout/backdrop.component";
 
 function NewTodoItem(props) {
@@ -25,7 +25,7 @@ function NewTodoItem(props) {
           Borrar
         </button>
       </div>
-      { showModal && <Modal /> }
+      { showModal && <NewTodoForm /> }
       { showModal && <Backdrop onClick={closeModule}/>}
     </div>
   );

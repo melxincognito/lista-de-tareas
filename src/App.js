@@ -3,6 +3,7 @@ import Card from "./components/UI/card/card.component";
 import NewTodoItem from "./components/todos/new-todo/newTodo.component";
 import MyLists from "./components/lists/listLayout.module";
 
+
 function App() {
   function tali() {
     alert('puta');
@@ -31,6 +32,9 @@ function App() {
 
 
             </div>
+          
+         
+            
           </div>
         </div>
       </div>
