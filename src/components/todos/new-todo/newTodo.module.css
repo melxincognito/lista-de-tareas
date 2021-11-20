@@ -9,4 +9,11 @@
   .description {
     display: flex;
   }
+
+  .actions button {
+    font-size: small;
+    height: 30px;
+    border-radius: 25px;
+  }
+  
   
