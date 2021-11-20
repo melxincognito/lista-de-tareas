@@ -4,8 +4,14 @@
   justify-content: center;
   width: 230px;
   border-radius: 20px;
-  color: rgba(0, 0, 0, 0.664);
-  background-color: rgba(180, 72, 81, 0.459);
+  color: rgba(107, 26, 26, 0.664);
+  background-color: rgba(255, 255, 255, 0.596);
   padding: 20px;
   max-height: 28px;
+}
+
+.listTab:hover {
+  color: rgba(107, 26, 26, 0.973);
+  background-color: rgba(255, 255, 255, 0.877);
+  
 }

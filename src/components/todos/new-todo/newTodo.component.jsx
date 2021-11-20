@@ -1,8 +1,8 @@
 import { React } from "react";
 import { useState } from "react";
 import classes from "./newTodo.module.css";
-import NewTodoForm from "../../forms/todos/newTodoForm.component";
-import Backdrop from "../../UI/layout/backdrop.component";
+import Modal from "../../UI/popupModules/overlayModule.component";
+import Backdrop from "../../UI/popupModules/backdrop.component";
 
 function NewTodoItem(props) {
   const [showModal, setModalIsOpen] = useState(false);
@@ -21,11 +21,11 @@ function NewTodoItem(props) {
       <p className={classes.description}> {props.description} </p>
       <p className={classes.fecha}> {props.fecha} </p>
       <div className={classes.actions}>
-        <button className="btn" onClick={deleteTodo}>
+        <button className="btn" onClick={deleteTodo} >
           Borrar
         </button>
       </div>
-      { showModal && <NewTodoForm /> }
+      { showModal && <Modal onCancel={closeModule} onConfirm={closeModule}/> }
       { showModal && <Backdrop onClick={closeModule}/>}
     </div>
   );
