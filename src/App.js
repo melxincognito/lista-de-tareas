@@ -20,15 +20,16 @@ function App() {
             <Card>
               <NewTodoItem title='Encontrar Trabajo' description='Encontrar trabajo en Madrid creando aplicaciones para el web' fecha='03/07/2022' />
             </Card>
-            <Card>
-              <NewTodoItem />
+            <Card >
+              <NewTodoItem title='Mudanza' description='Volvemos a España porque no podemos correr de nuestros problemas para siempre' fecha='03/15/2022' />
             </Card>
             <div className="addItem">
               <button className="addItemBtn" title="Añadir Nuevo Recuerdo" onClick={tali}>
                 {" "}
                 +{" "}
               </button>
-              
+
+
             </div>
           </div>
         </div>

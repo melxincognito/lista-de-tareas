@@ -1,15 +1,27 @@
-import React from "react";
+import { React } from "react";
+import { useState } from "react";
 import classes from "./newTodo.module.css";
+import Modal from "../../UI/layout/overlayModule.component";
+import Backdrop from "../../UI/layout/backdrop.component";
 
 function NewTodoItem(props) {
+  const [showModal, setModalIsOpen] = useState(false);
+  function deleteTodo() {
+    setModalIsOpen(true);
+  }
+
   return (
     <div>
       <h2 className={classes.title}> {props.title} </h2>
       <p className={classes.description}> {props.description} </p>
       <p className={classes.fecha}> {props.fecha} </p>
       <div className={classes.actions}>
-        <button className="btn">Borrar</button>
+        <button className="btn" onClick={deleteTodo}>
+          Borrar
+        </button>
       </div>
+      { showModal && <Modal /> }
+      { showModal && <Backdrop />}
     </div>
   );
 }
