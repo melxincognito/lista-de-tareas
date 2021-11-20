@@ -10,6 +10,11 @@ function NewTodoItem(props) {
     setModalIsOpen(true);
   }
 
+  function closeModule() {
+    setModalIsOpen(false);
+  }
+
+
   return (
     <div>
       <h2 className={classes.title}> {props.title} </h2>
@@ -21,7 +26,7 @@ function NewTodoItem(props) {
         </button>
       </div>
       { showModal && <Modal /> }
-      { showModal && <Backdrop />}
+      { showModal && <Backdrop onClick={closeModule}/>}
     </div>
   );
 }
