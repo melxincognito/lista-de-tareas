@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
 function ImportantTodo() {
-    return(
-        <div>
-            <h2> Tareas Importantes </h2>
-        </div>
-    )
+  return (
+    <section>
+      <h1> volvemos </h1>
+    
+    </section>
+  );
 }
 
 export default ImportantTodo;
-

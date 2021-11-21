@@ -18,12 +18,12 @@ function AllTodos() {
       fecha: "03/15/2022",
     },
     {
-        id: "3",
-        title: "Mudanza",
-        description:
-          "Volver a Madrid porque no podemos seguir viviendo aquí cuando tu vida sigúe aya",
-        fecha: "03/15/2022",
-      },
+      id: "3",
+      title: "Mudanza",
+      description:
+        "Volver a Madrid porque no podemos seguir viviendo aquí cuando tu vida sigúe aya",
+      fecha: "03/15/2022",
+    },
   ];
 
   return (

@@ -1,3 +1,13 @@
+.appLayout {
+  text-align: center;
+  border-radius: 25px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
 
 .appHeader {
   display: flex;
@@ -22,7 +32,6 @@
   background-color: rgba(54, 36, 44, 0.801);
   color: white;
   gap: 10px;
- 
 }
 
 .content {
@@ -45,8 +54,14 @@
   border-radius: 25px;
   background-color: rgba(54, 36, 44, 0.726);
   color: white;
-  overflow-x:hidden;
-  overflow-y: auto;
-
+  overflow-x: auto;
 }
 
+button {
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  font-family: "Lobster";
+  font-size: large;
+  color: rgba(255, 196, 0, 0.973);
+}

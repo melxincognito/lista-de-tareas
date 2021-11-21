@@ -5,7 +5,7 @@ import ListTab from "../UI/tab/listTab.component";
 
 function MainNavigation(props) {
   return (
-    <div>
+    <div className={classes.appLayout}>
       <header className={classes.appHeader}>Lista de Tareas</header>
 
       <div>

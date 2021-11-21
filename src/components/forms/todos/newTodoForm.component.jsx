@@ -27,7 +27,6 @@ function NewTodoForm(props) {
   return (
     <Card>
       <form className={classes.form} onSubmit={submitHandler}>
-        <div>
           <div className={classes.control}>
             <label htmlFor="title">Título</label>
             <input type="text" required id='title'/>
@@ -43,7 +42,6 @@ function NewTodoForm(props) {
           <div className={classes.actions}>
             <button> Añadir a mí lista </button>
           </div>
-        </div>
       </form>
     </Card>
   );

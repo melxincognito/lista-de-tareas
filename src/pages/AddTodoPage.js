@@ -1,10 +1,12 @@
 import React from "react";
+import NewTodoForm from "../components/forms/todos/newTodoForm.component";
 
 function AddTodo() {
   return (
-    <div>
-      <h2>Añadir Tarea</h2>
-    </div>
+    <section>
+      <h1> Añadir Tarea </h1>
+      <NewTodoForm />
+    </section>
   );
 }
 
