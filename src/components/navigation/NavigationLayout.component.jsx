@@ -2,8 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./NavigationLayout.module.css";
 import ListTab from "../UI/tab/listTab.component";
+import { useState } from 'react';
+import NewTodoForm from "../forms/todos/newTodoForm.component";
+import Backdrop from "../UI/popupModules/backdrop.component";
 
 function MainNavigation(props) {
+
+  const [showModal, setModalIsOpen] = useState(false);
+  function openNewTodo() {
+    setModalIsOpen(true);
+  }
+
+  function closeModule() {
+    setModalIsOpen(false);
+  }
+
   return (
     <div className={classes.appLayout}>
       <header className={classes.appHeader}>Lista de Tareas</header>
@@ -26,7 +39,7 @@ function MainNavigation(props) {
           <br />
           <ListTab>
             <Link to="/añadirTarea">
-              <h2> Añadir Tarea </h2>
+              <h2 onClick={openNewTodo}> Añadir Tarea </h2>
             </Link>
           </ListTab>
         </nav>
@@ -36,6 +49,9 @@ function MainNavigation(props) {
           <div>{props.children}</div>
         </div>
       </div>
+      {showModal && <NewTodoForm />}
+      {showModal && <Backdrop onClick={closeModule} />}
+
     </div>
   );
 }
