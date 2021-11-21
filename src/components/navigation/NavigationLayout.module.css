@@ -22,8 +22,7 @@
   background-color: rgba(54, 36, 44, 0.801);
   color: white;
   gap: 10px;
-  
-  
+ 
 }
 
 .content {
@@ -38,19 +37,16 @@
   width: 1300px;
 }
 .todos {
-  display: grid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 1300px;
   border: solid rgba(255, 255, 255, 0.692);
   border-radius: 25px;
-  background-color: rgba(54, 36, 44, 0.801);
+  background-color: rgba(54, 36, 44, 0.726);
   color: white;
-}
+  overflow-x:hidden;
+  overflow-y: auto;
 
-.myTodos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  align-items: left;
 }
 

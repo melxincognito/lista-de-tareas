@@ -33,7 +33,7 @@ function MainNavigation(props) {
       </div>
       <div className={classes.content}>
         <div className={classes.todos}>
-          <div className={classes.myTodos}>{props.children}</div>
+          <div>{props.children}</div>
         </div>
       </div>
     </div>
