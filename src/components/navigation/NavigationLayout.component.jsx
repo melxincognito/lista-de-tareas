@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useState } from "react";
 import classes from "./NavigationLayout.module.css";
 import ListTab from "../UI/tab/listTab.component";
-import { useState } from "react";
 import NewTodoForm from "../forms/todos/newTodoForm.component";
 import Backdrop from "../UI/popupModules/backdrop.component";
 
 function MainNavigation(props) {
+
+  const navigate = useNavigate();
   const [showModal, setModalIsOpen] = useState(false);
+
   function openNewTodo(e) {
     e.preventDefault();
 
@@ -28,7 +31,10 @@ function MainNavigation(props) {
           "Content-Type": "application/json",
         },
       }
-    );
+    ).then(() => {
+      closeModule();
+      navigate('/')
+    });
   }
 
   return (
