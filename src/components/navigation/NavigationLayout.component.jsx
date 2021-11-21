@@ -2,19 +2,33 @@ import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./NavigationLayout.module.css";
 import ListTab from "../UI/tab/listTab.component";
-import { useState } from 'react';
+import { useState } from "react";
 import NewTodoForm from "../forms/todos/newTodoForm.component";
 import Backdrop from "../UI/popupModules/backdrop.component";
 
 function MainNavigation(props) {
-
   const [showModal, setModalIsOpen] = useState(false);
-  function openNewTodo() {
+  function openNewTodo(e) {
+    e.preventDefault();
+
     setModalIsOpen(true);
   }
 
   function closeModule() {
     setModalIsOpen(false);
+  }
+
+  function addTodoHandler(todoData) {
+    fetch(
+      "https://lista-de-tareas-f4daa-default-rtdb.firebaseio.com/allTodos.json",
+      {
+        method: "POST",
+        body: JSON.stringify(todoData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
   }
 
   return (
@@ -49,9 +63,8 @@ function MainNavigation(props) {
           <div>{props.children}</div>
         </div>
       </div>
-      {showModal && <NewTodoForm />}
+      {showModal && <NewTodoForm onAddTodo={addTodoHandler} />}
       {showModal && <Backdrop onClick={closeModule} />}
-
     </div>
   );
 }

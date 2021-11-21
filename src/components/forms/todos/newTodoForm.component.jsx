@@ -29,15 +29,15 @@ function NewTodoForm(props) {
       <form className={classes.form} onSubmit={submitHandler}>
           <div className={classes.control}>
             <label htmlFor="title">Título</label>
-            <input type="text" required id='title'/>
+            <input type="text" required id='title' ref={titleInputRef} />
           </div>
           <div className={classes.control}>
             <label>Fecha</label>
-            <input type="date" required id='fecha'/>
+            <input type="date" required id='fecha' ref={fechaInputRef} />
           </div>
           <div className={classes.control}>
             <label htmlFor="description">Resumen</label>
-            <textarea id="description" required rows="4" />
+            <textarea id="description" required rows="4" ref={descriptionInputRef} />
           </div>
           <div className={classes.actions}>
             <button> Añadir a mí lista </button>
