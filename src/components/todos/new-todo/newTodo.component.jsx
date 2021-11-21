@@ -14,19 +14,18 @@ function NewTodoItem(props) {
     setModalIsOpen(false);
   }
 
-
   return (
     <div>
       <h2 className={classes.title}> {props.title} </h2>
       <p className={classes.description}> {props.description} </p>
       <p className={classes.fecha}> {props.fecha} </p>
       <div className={classes.actions}>
-        <button className="btn" onClick={deleteTodo} >
+        <button className="btn" onClick={deleteTodo}>
           Borrar
         </button>
       </div>
-      { showModal && <Modal onCancel={closeModule} onConfirm={closeModule}/> }
-      { showModal && <Backdrop onClick={closeModule}/>}
+      {showModal && <Modal onCancel={closeModule} onConfirm={closeModule} />}
+      {showModal && <Backdrop onClick={closeModule} />}
     </div>
   );
 }

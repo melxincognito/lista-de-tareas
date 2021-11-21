@@ -1,0 +1,53 @@
+
+.appHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: gold;
+  height: 150px;
+  border: solid purple;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.788);
+}
+
+.navigationLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1300px;
+  border: solid rgba(255, 255, 255, 0.692);
+  border-radius: 25px;
+  padding: 10px;
+  background-color: rgba(54, 36, 44, 0.801);
+  color: white;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  border: solid rgba(83, 59, 76, 0.562);
+  border-radius: 25px;
+  padding: 10px;
+  background-color: rgba(136, 15, 110, 0.699);
+  min-height: 600px;
+  max-height: 700px;
+}
+.todos {
+  display: grid;
+  width: 1300px;
+  border: solid rgba(255, 255, 255, 0.692);
+  border-radius: 25px;
+  background-color: rgba(54, 36, 44, 0.801);
+  color: white;
+}
+
+.myTodos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: left;
+}
+

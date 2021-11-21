@@ -10,8 +10,9 @@ function Modal(props) {
     }
 
     return(
-
+        
         <div className={classes.modal}> 
+            <h2> ¿ Seguro? </h2>
             <button className={classes.cancela} onClick={cancelHandler}>Cancelar</button>
             <button className={classes.btn} onClick={confirmHandler}>Confirma</button>
         </div>
