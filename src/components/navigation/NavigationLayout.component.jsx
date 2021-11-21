@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./NavigationLayout.module.css";
 import ListTab from "../UI/tab/listTab.component";
 
@@ -6,26 +7,33 @@ function MainNavigation(props) {
   return (
     <div>
       <header className={classes.appHeader}>Lista de Tareas</header>
-      
-        <div className={classes.navigationLayout}>
+
+      <div>
+        <nav className={classes.navigationLayout}>
           <ListTab>
-            <h2> Todas Mis Tareas </h2>
+            <Link to="/">
+              <h2>Todos Mis Tareas </h2>
+            </Link>
           </ListTab>
+
           <br />
           <ListTab>
-            <h2> Tareas Importantes </h2>
+            <Link to="/tareasImportantes">
+              <h2>Tareas Importantes </h2>
+            </Link>
           </ListTab>
+
           <br />
           <ListTab>
-            <h2> Añadir Tarea </h2>
+            <Link to="/añadirTarea">
+              <h2> Añadir Tarea </h2>
+            </Link>
           </ListTab>
-        </div>
-        <div className={classes.content}>
+        </nav>
+      </div>
+      <div className={classes.content}>
         <div className={classes.todos}>
-          <h1> Tareas </h1>
-          <div className={classes.myTodos}>
-          {props.children}
-          </div>
+          <div className={classes.myTodos}>{props.children}</div>
         </div>
       </div>
     </div>

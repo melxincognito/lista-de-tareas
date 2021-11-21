@@ -1,8 +1,8 @@
 import { React } from "react";
 import { useState } from "react";
 import classes from "./newTodo.module.css";
-import Modal from "../../UI/popupModules/overlayModule.component";
-import Backdrop from "../../UI/popupModules/backdrop.component";
+import Modal from '../UI/popupModules/overlayModule.component';
+import Backdrop from "../UI/popupModules/backdrop.component";
 
 function NewTodoItem(props) {
   const [showModal, setModalIsOpen] = useState(false);
